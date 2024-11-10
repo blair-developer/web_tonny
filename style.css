@@ -1,0 +1,38 @@
+    table {
+      border-collapse: collapse;
+    }
+    th {
+      padding:10px;
+    }
+    td {
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #add8e6;
+      color: black;
+    }
+    .block {
+    width: 100px;
+    /*float: left;*/
+      display: inline-block;
+      zoom: 1;
+    }
+    .column {
+    float: left;
+    height: 200px;
+    /*width: 33.33%;*/
+    padding: 5px;
+    }
+  
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
